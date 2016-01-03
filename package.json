@@ -1,0 +1,30 @@
+{
+  "name": "express-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "body-parser": "^1.14.2",
+    "bootstrap": "^3.3.6",
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "hbs": "^4.0.0",
+    "knex": "^0.9.0",
+    "mocha": "^2.3.4",
+    "moment": "^2.11.0",
+    "nodemon": "^1.8.1",
+    "passport": "^0.3.2",
+    "pg": "^4.4.3",
+    "request": "^2.67.0",
+    "should": "^8.0.2",
+    "sqlite3": "^3.1.1",
+    "supertest": "^1.1.0"
+  }
+}
