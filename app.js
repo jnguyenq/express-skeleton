@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 var hbs = require('hbs');
 var port = 3000;
+var date = new Date();
 
 //Templating
 app.set('view engine', 'html');
@@ -28,6 +29,6 @@ app.use(routes);
 
 //Server
 app.listen(port, function() {
-	console.log('Listening on port ' + port);
+	console.log('Listening on port ' + port + ' at ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds());
 });
 
