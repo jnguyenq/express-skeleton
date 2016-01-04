@@ -4,8 +4,10 @@ var app = express();
 var fs = require('fs');
 var router = express.Router();
 var routes = require('./routes/routes');
-var knex = reqiure('knex');
+var knex = require('knex');
+var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
+var hbs = require('hbs');
 var port = 3000;
 
 //Templating

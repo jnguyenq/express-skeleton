@@ -4,7 +4,11 @@ var exphbs = require('express-handlebars');
 var hbs = require('hbs');
 var app = express();
 
-hbs.registerPartials(__dirname + '/../views/partials');
-app.engine('handlebars', exphbs({ defaultLayout: 'demo' }));
+var home = require('../controllers/home');
+
+//Home
+router.get('/', function(req, res, next) {
+	home(req, res);
+});
 
 module.exports = router;
